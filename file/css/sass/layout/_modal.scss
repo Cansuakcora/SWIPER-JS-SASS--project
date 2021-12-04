@@ -1,0 +1,221 @@
+// .modal {
+//     &__decription__title {
+//         color: $color-blue;
+//         font-family: "FSAlbertBold", sans-serif;
+//         font-size: 18px;
+//     }
+
+//     &__speaker__bio-text {
+//         font-size: 15px;
+//         color: $color-black-4;
+//         font-family: 'RobotoRegular';
+//         margin-bottom: .5rem;
+//     }
+
+//     &-body {
+//         padding: 2rem;
+//     }
+
+//     &__close {
+//         font-size: 38px;
+//         font-weight: 300;
+//         line-height: .5;
+//         position: absolute;
+//         top: -1.8rem;
+//         right: -2rem;
+//         color: $color-blue-dark;
+//         background-color: $color-white !important;
+//         border-radius: 50%;
+//         opacity: 1;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         padding: .5rem .4rem .5rem !important;
+
+//         @include media767{
+//             top: 0.2rem;
+//             right: 0.5rem;
+//             background-color:$color-blue-dark !important;
+//             color: $color-white;
+//             font-size: 32px;
+//         }
+//     }
+
+//     &__dialog{
+//         max-width: 700px;
+//         width: 100%;
+//         border-radius: 23px;
+//         margin-top: 4rem;
+
+//         @include media767{
+//             margin: 4rem auto 0 auto;
+//         }
+//     }
+
+//     &__content{
+//         border-radius: 23px;
+//     }
+// }
+
+// .card-webinar__btn-bio{
+// font-size: 12px;
+// color: #fff;
+// background-color: #000484;
+// border: 1px solid #000484;
+// border-radius: 30px;
+// font-family: 'FSAlbertBold', serif;
+// padding-bottom: .5rem;
+// text-align: center;
+// display: block;
+// width: 69px;
+// height: 27px;
+// padding: 2px;
+// margin-top: 1rem;
+// margin-left: 8rem;
+// text-decoration: none;
+// transition: all .5s ease-in;
+// }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+
+    &-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 1rem;
+        border-bottom: 1px solid #dee2e6;
+        border-top-left-radius: calc(.3rem - 1px);
+        border-top-right-radius: calc(.3rem - 1px);
+
+        &__speaker__img {
+            width: 95px;
+            height: 95px;
+        }
+
+        &-speaker-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__speaker__name {
+            font-size: 12px;
+            color: $color-white;
+            font-family: 'FSAlbertBold', sans-serif;
+            padding-bottom: .5rem;
+            margin-left: 1rem;
+        }
+
+        &__speaker__title {
+            font-size: 11px;
+            color: $color-white;
+            margin-left: 1rem;
+            font-family: 'FSAlbertRegular', sans-serif;
+            padding-bottom: .5rem;
+
+        }
+
+        .modal-header__speaker {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: $color-first-box-color;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 420px;
+            padding: 1.2rem 1rem;
+
+        }
+
+    }
+
+    &-body {
+        position: relative;
+        flex: 1 1 auto;
+        padding: 1rem;
+    }
+
+    &-content {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: $color-white;
+        background-clip: padding-box;
+        border: 1px solid rgba(0, 0, 0, .2);
+        outline: 0;
+        padding: 1rem 1.5rem;
+        border-radius: 11px;
+    }
+}
+
+
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal-dialog,
+.modal-content {
+    max-width: 550px !important;
+}
+
+
+
+.modal-body__text {
+    font-size: 16px;
+    color: $color-first-box-color;
+    font-family: 'FSAlbertRegular', sans-serif;
+    padding-bottom: .5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal-header .close {
+    position: absolute;
+    top: 8px;
+    right: 1px;
+    padding: 7px 10px;
+}
+
+.close:not(:disabled):not(.disabled):focus,
+.close:not(:disabled):not(.disabled):hover {
+    opacity: 1;
+}
+
+button.close {
+    padding: 0;
+    background-color: $color-first-box-color;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    color: $color-white;
+    text-shadow: 0 1px 0 $color-white;
+    opacity: 1;
+}
+
+.card-session__speaker {
+    cursor: pointer;
+}

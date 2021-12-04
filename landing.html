@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Name | Home</title>
+
+    <link rel="stylesheet" href="/file/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+
+    <!-- For ie -->
+    <link rel="stylesheet" href="/file/css/swiper.min.css">
+    <link rel="stylesheet" href="/file/css/main.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav-desktop">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-lg-2 flex-start-lg-center">
+                    <a href="/">
+                        <img src="/file/image/logo-aflive.png" alt="Logo" class="header__logo">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-lg-6 flex-start-lg-center d-none-991">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="/" id="upcomingEvents" class="header__menu-link">HOME
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#seesion-time" id="previousEvents" class="header__menu-link">SESSIONS
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#objectives" id="previousEvents" class="header__menu-link">OBJECTIVES
+                            </a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#agenda" id="previousEvents" class="header__menu-link">AGENDA
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-lg-4 flex-end-lg-center">
+                    <a href="#" class="header__flag-link">
+                        <img src="/file/image/flag-uk.png" alt="Flag" class="header__flag-img">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <nav class="nav-mobile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="nav-mobile__logos">
+                            <a href="/"><img src="/file/image/logo-aflive.png" alt="Logo"
+                                    class="nav-mobile__logo nav-mobile__logo-left mr-sm"></a>
+
+                            <a href="#" class="header__flag-link">
+                                <img src="/file/image/flag-uk.png" alt="Flag" class="header__flag-img">
+                            </a>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="navi-toggle" class="nav-mobile__checkbox" />
+
+                            <label for="navi-toggle" class="nav-mobile__button">
+                                <span class="nav-mobile__icon">
+                                    <span class="nav-mobile__icon-span"> </span>
+                                    <span class="nav-mobile__icon-span"> </span>
+                                    <span class="nav-mobile__icon-span"> </span>
+                                    <span class="nav-mobile__icon-span"> </span>
+                                    <span class="nav-mobile__icon-span"> </span>
+                                    <span class="nav-mobile__icon-span"> </span>
+                                </span>
+                            </label>
+
+                            <div class="nav-mobile__background"></div>
+
+                            <div class="nav-mobile__nav">
+                                <ul class="nav-mobile__list">
+                                    <li class="nav-mobile__item">
+                                        <a href="/" class="nav-mobile__link menuLink">HOME</a>
+                                    </li>
+                                    <li class="nav-mobile__item">
+                                        <a href="#seesion-time" class="nav-mobile__link menuLink">SESSIONS</a>
+                                    </li>
+                                    <li class="nav-mobile__item">
+                                        <a href="#objectives" class="nav-mobile__link menuLink">OBJECTIVES</a>
+                                    </li>
+                                    <li class="nav-mobile__item">
+                                        <a href="#agenda" class="nav-mobile__link menuLink">AGENDA</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <main class="main main-bg-landing">
+        <section class="session-time" id="seesion-time">
+            <div class="container-fluid">
+                <div class="row landing__topic">
+                    <div class="col-sm-12 col-lg-8">
+                        <h3 class="session-time__tittle">Towards a Multidisciplinary <br> Treatment Pathway for AF:
+                            <br>Latest Updates & Expert
+                            Perspectives</h3>
+                    </div>
+                    <div class="col-sm-12 col-lg-4 session-time__position">
+                        <a href="login" class="btn-login">
+                            <span class="btn-login--text">LOGIN
+                            </span>
+                            <img class="session-time__btn-icon" src="/file/image/login-btn-icon.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid session-card-position">
+
+                <div class="card-session card-session--first mb-xl">
+                    <!-- <div class="card-session__finish">
+                    </div> -->
+                        <div class="card-session__head">
+                            <h3 class="card-session__date">Wednesday, 11 August</h3>
+                            <h2 class="card-session__title">Asia Session</h2>
+                        </div>
+                        <div class="card-session__speaker" data-toggle="modal" data-target="#exampleModal1">
+                            <img src="/file/image/speaker-1.png" alt="Speaker" class="card-session__speaker__img">
+                            <div class="card-session__speaker__infos">
+                                <h5 class="card-session__speaker__name">Speaker1-Name
+                                </h5>
+                                <h6 class="card-session__speaker__info">
+                                    speaker-info-prg1<br>
+                                    speaker-info-prg2
+                                </h6>
+                            </div>
+                        </div>
+
+                        <div class="card-session__speaker" data-toggle="modal" data-target="#exampleModal2">
+                            <img src="/file/image/speaker-2.png" alt="Speaker" class="card-session__speaker__img">
+                            <div class="card-session__speaker__infos">
+                                <h5 class="card-session__speaker__name">Speaker2-Name</h5>
+                                <h6 class="card-session__speaker__info">
+                                    speaker-info-prg1<br>
+                                    speaker-info-prg2
+                                </h6>
+                            </div>
+                        </div>
+
+                        <div class="card-session__city" id="agenda">
+                            <div class="card-session__city-session-btns">
+                                <p class="card-session__city__btn card-session__city__btn-active" id="asia_btn1">Session
+                                    1
+                                </p>
+                                <p class="card-session__city__btn" id="asia_btn2">Session 2</p>
+                            </div>
+                            <h3 class="card-session__city__title">Country/region</h3>
+                            <div class="card-session__city__table" id="asia_agenda1">
+                                <div class="card-session__city__row">
+                                    <p class="card-session__city__name">Pakistan</p>
+                                    <p class="card-session__city__time">13:00–14:30</p>
+                                </div>
+                                <div class="card-session__city__row">
+                                    <p class="card-session__city__name">India</p>
+                                    <p class="card-session__city__time">13:30–15:00</p>
+                                </div>
+                                <div class="card-session__city__row">
+                                    <p class="card-session__city__name">Indonesia, Thailand,<br> Vietnam</p>
+                                    <p class="card-session__city__time">15:00–16:30</p>
+                                </div>
+                                <div class="card-session__city__row">
+                                    <p class="card-session__city__name">Hong Kong, Malaysia,<br> Philippines, Singapore,
+                                        Taiwan</p>
+                                    <p class="card-session__city__time">16:00–17:30</p>
+                                </div>
+                            </div>
+
+                            <div class="card-session__city__table hide" id="asia_agenda2">
+                                <div class="card-session__city__row">
+                                    <p class="card-session__city__name">Pakistan</p>
+                                    <p class="card-session__city__time">16:00–17:30</p>
+                                </div>
+                                <div class="card-session__city__row">
+                                    <p class="card-session__city__name">India</p>
+                                    <p class="card-session__city__time">16:30–18:00</p>
+                                </div>
+                                <div class="card-session__city__row">
+                                    <p class="card-session__city__name">Indonesia, Thailand,<br> Vietnam</p>
+                                    <p class="card-session__city__time">18:00–19:30</p>
+                                </div>
+                                <div class="card-session__city__row">
+                                    <p class="card-session__city__name">Hong Kong, Malaysia,<br> Philippines, Singapore,
+                                        Taiwan</p>
+                                    <p class="card-session__city__time">19:00–20:30</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                    <p class="card-session__city__info">Register for the AFLive<br> webinar with John Amerena <br>(28 September )</p>
+                    <!-- ASIA SESSION REGISTER BUTTONS -->
+                    <div class="btn-register-flex">
+                        <a href="/register.html" class="btn-register btn-reg-asia">Register for Session 1</a>
+                        <a href="/register.html" class="btn-register btn-reg-asia">Register for Session 2</a>
+                    </div>
+                    <!-- ASIA SESSION REGISTER BUTTONS -->
+                </div>
+
+                <div class="card-session card-session--second">
+                    <div class="card-session__head">
+                        <h3 class="card-session__date">Tuesday, 21 September</h3>
+                        <h2 class="card-session__title">Africa and Middle East Session</h2>
+                    </div>
+
+                    <div class="card-session__speaker">
+                        <img src="/file/image/speaker-1.png" alt="Speaker" class="card-session__speaker__img">
+                        <div class="card-session__speaker__infos">
+                            <h5 class="card-session__speaker__name">Speaker1-Name
+                            </h5>
+                            <h6 class="card-session__speaker__info">
+                                speaker-info-prg1<br>
+                                speaker-info-prg2
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="card-session__speaker">
+                        <img src="/file/image/speaker-2.png" alt="Speaker" class="card-session__speaker__img">
+                        <div class="card-session__speaker__infos">
+                            <h5 class="card-session__speaker__name">Speaker2-Name</h5>
+                            <h6 class="card-session__speaker__info">
+                                speaker-info-prg1<br>
+                                speaker-info-prg2
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="card-session__city ">
+                        <h3 class="card-session__city__title mt-md">Country/region</h3>
+                        <div class="card-session__city__table">
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Morocco</p>
+                                <p class="card-session__city__time">18:00–19:00</p>
+                            </div>
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Egypt, South Africa</p>
+                                <p class="card-session__city__time">19:00–20:00</p>
+                            </div>
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Bahrain, Iraq, Jordan, Kuwait,<br> Lebanon, Qatar,
+                                    Saudi Arabia</p>
+                                <p class="card-session__city__time">20:00–21:00</p>
+                            </div>
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Oman, United Arab Emirates</p>
+                                <p class="card-session__city__time">21:00–22:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- AFME SESSION REGISTER BUTTONS -->
+                    <a href="/register.html" class="mt-md btn-register mb-4">Register for Session</a>
+                    <!-- AFME SESSION REGISTER BUTTONS -->
+                </div>
+
+                <div class="card-session card-session--third">
+                    <div class="card-session__head">
+                        <h3 class="card-session__date">Session 1 - Tuesday, 21 September <br>
+                            Session 2 - Wednesday, 22 September 2021</h3>
+                        <h2 class="card-session__title">Latin America Session</h2>
+                    </div>
+                    <div class="card-session__speaker">
+                        <img src="/file/image/speaker-1.png" alt="Speaker" class="card-session__speaker__img">
+                        <div class="card-session__speaker__infos">
+                            <h5 class="card-session__speaker__name">Speaker1-Name
+                            </h5>
+                            <h6 class="card-session__speaker__info">
+                                speaker-info-prg1<br>
+                               speaker-info-prg2
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="card-session__speaker">
+                        <img src="/file/image/speaker-2.png" alt="Speaker" class="card-session__speaker__img">
+                        <div class="card-session__speaker__infos">
+                            <h5 class="card-session__speaker__name">Speaker2-Name</h5>
+                            <h6 class="card-session__speaker__info">
+                               speaker-info-prg1<br>
+                               speaker-info-prg2
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="card-session__city">
+
+                        <div class="card-session__city-session-btns">
+                            <p class="card-session__city__btn card-session__city__btn-active" id="latam_btn1">Session 1
+                            </p>
+                            <p class="card-session__city__btn" id="latam_btn2">Session 2</p>
+                        </div>
+
+                        <h3 class="card-session__city__title">Country/region</h3>
+                        <div class="card-session__city__table" id="latam_agenda1">
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Central American Countries</p>
+                                <p class="card-session__city__time">17:00–18:00</p>
+                            </div>
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Colombia, Ecuador, Mexico, Peru</p>
+                                <p class="card-session__city__time">18:00–19:00</p>
+                            </div>
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Bolivia, Paraguay</p>
+                                <p class="card-session__city__time">19:00–20:00</p>
+                            </div>
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Argentina, Brazil, Chile, Uruguay</p>
+                                <p class="card-session__city__time">20:00–21:00</p>
+                            </div>
+                        </div>
+                        <div class="card-session__city__table hide" id="latam_agenda2">
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Central American Countries</p>
+                                <p class="card-session__city__time">19:00–20:00</p>
+                            </div>
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Colombia, Ecuador, Mexico, Peru</p>
+                                <p class="card-session__city__time">20:00–21:00</p>
+                            </div>
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Bolivia, Paraguay</p>
+                                <p class="card-session__city__time">21:00–22:00</p>
+                            </div>
+                            <div class="card-session__city__row">
+                                <p class="card-session__city__name">Argentina, Brazil, Chile, Uruguay</p>
+                                <p class="card-session__city__time">22:00–23:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- LATAM SESSION REGISTER BUTTONS -->
+                    <a href="/register.html" class="btn-register mb-4 mt-sm">Register for Session 1</a>
+                    <a href="/register.html" class="btn-register">Register for Session 2</a>
+                    <!-- LATAM SESSION REGISTER BUTTONS -->
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <section class="objectives" id="objectives">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="objectives__title">OBJECTIVES</div>
+                </div>
+                <div class="col-sm-12 col-lg-6 p-relative mb-objective flex-center">
+                    <p class="objectives__text">
+                        <span><b>To define</b> the challenges and appropriate</span>
+                        <span>management of patients with AF and multiple</span>
+                        <span>comorbidities that may complicate treatment</span>
+                    </p>
+                    <span class="objectives__cricle"></span>
+                </div>
+                <div class="col-sm-12 col-lg-6 p-relative flex-center">
+                    <p class="objectives__text">
+                        <span><b>To share</b> recent advances and practical aspects of</span>
+                        <span> secondary stroke prevention patients with AF,</span>
+                        <span> including prevention of recurrent events through the</span>
+                        <span>identification and management of modifiable risk factors</span>
+                    </p>
+                    <span class="objectives__cricle"></span>
+                </div>
+                <div class="col-sm-12 offset-lg-3 col-lg-6 p-relative mt-5 mb-lg-5 flex-center">
+                    <p class="objectives__text">
+                        <span><b>To discuss </b>optimising AF management and stroke</span>
+                        <span>prevention through a multidisciplinary approach,</span>
+                        <span>including current perspectives and key challenges.</span>
+                    </p>
+                    <span class="objectives__cricle"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="coming-soon d-none" id="coming-soon">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-4 flex-center">
+                    <div class="card-coming">
+                        <img src="/file/image/card-bg-pfizerpro.png" alt="image" id="comingSoonIMG1"
+                            class="card-coming__img card-coming__img--pruple">
+                        <img src="file/image/icon-arrow.png" alt="Icon" class="card-coming__img__icon-arrow"
+                            id="comingSoonIcon1">
+                    </div>
+
+                    <div class="card-coming__hide-card" id="comingSoonCardShow1">
+                        <p class="card-coming__hide-card__text">
+                            Find information on Pfizer medicines and <br>useful resources related to medical
+                            conditions.<br>
+                            Visit your local PfizerPro.
+                        </p>
+
+                        <div class="btn-dropdown">
+                            <button onclick="cardHideBtn()" class="btn-card-hide">
+                                Select country
+                                <img src="file/image/icon-arrow.png" alt="Icon" class="btn-card-hide__icon">
+                            </button>
+                            <div id="cardHideBtnList" class="btn-card-hide__child">
+                                <a href="#">Brazil <i class="arro righ"></i> </a>
+                                <a href="#">Hong Kong <i class="arro righ"></i> </a>
+                                <a href="#">Mexico <i class="arro righ"></i> </a>
+                                <a href="#">Malaysia <i class="arro righ"></i> </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 flex-center">
+                    <div class="card-coming">
+                        <img src="/file/image/card-bg-mdd.png" alt="image" id="comingSoonIMG2"
+                            class="card-coming__img card-coming__img--pruple">
+                        <img src="file/image/icon-arrow.png" alt="Icon" class="card-coming__img__icon-arrow"
+                            id="comingSoonIcon2">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4 flex-center">
+                    <div class="card-coming">
+                        <img src="/file/image/card-bg-paciente.png" alt="image" id="comingSoonIMG3"
+                            class="card-coming__img card-coming__img--yellow">
+                        <img src="file/image/icon-arrow.png" alt="Icon" class="card-coming__img__icon-arrow"
+                            id="comingSoonIcon3">
+                    </div>
+
+                    <div class="card-coming__hide-card" id="comingSoonCardShow3">
+                        <p class="card-coming__hide-card__text">
+                            Improve practical skills and clinical thinking<br>
+                            through this multiplatform digital system for <br>
+                            realistic patient simulation
+                        </p>
+
+                        <div class="btn-dropdown">
+                            <a href="#" class="btn-card-hide pl-4">
+                                Go to link
+                                <img src="file/image/icon-arrow.png" alt="Icon" class="btn-card-hide__icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-events" id="upcoming-events">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-lg-12 col-xl-6">
+                    <h2 class="upcoming-events__title">Upcoming Events</h2>
+                    <h4 class="upcoming-events__subtitle">We’re always planning more exciting <br>events for you. Stay
+                        tuned for more event<br> announcements!</h4>
+                </div>
+                <div class="col-lg-12 col-xl-6">
+
+                    <div class="upcoming-card-pstn p-relative">
+
+                        <div class="card-upcoming card-upcoming--white upcoming-card-animation-left" id="upcomingCard4">
+                            <span class="card-upcoming__close-icon card-upcoming__close-icon--pruple"
+                                id="upcominCloseIcon4" style="display: block;">×</span>
+                            <p class="card-upcoming__date card-upcoming__date--black" id="cardClickDate2">
+                                Tuesday, 28 September
+                            </p>
+                            <div class="card-upcoming__city">
+                                <p class="card-upcoming__title card-upcoming__title--black" id="cardClickText2">
+                                    Optimizing AF Management<br>
+                                    Across the Risk Spectrum:<br>
+                                    Latest Congress Highlights & Updates
+                                </p>
+                                <p class="card-upcoming__title-city" style="background-color:#000484; color: #fff;">Asia
+                                </p>
+                            </div>
+                            <p class="card-upcoming__speaker-name">Speaker-Name</p>
+                            <!-- ASIA SESSION REGISTER BUTTONS -->
+                            <div class="btn-register__position">
+                                <a href="/register" class="btn-register bg-dark-blue color-white mb-4 mt-sm"
+                                    target="_blank">Register for
+                                    Session
+                                    1</a>
+                                <a href="/register" class="btn-register bg-dark-blue color-white"
+                                    target="_blank">Register for Session 2</a>
+                            </div>
+                            <!-- ASIA SESSION REGISTER BUTTONS -->
+
+                        </div>
+
+                        <div class="card-upcoming card-upcoming--pruple" id="upcomingCard1">
+                            <span class="card-upcoming__close-icon card-upcoming__close-icon--white"
+                                id="upcominCloseIcon1">×</span>
+                            <p class="card-upcoming__date card-upcoming__date--white">Tuesday, 19 October</p>
+                            <div class="card-upcoming__city">
+                                <p class="card-upcoming__title card-upcoming__title--white card-upcoming__title__block">
+                                    Anticoagulation in VTE treatment:<br> Translating evidence into practice
+                                </p>
+                                <p class="card-upcoming__title-city">Asia</p>
+                            </div>
+                            <p class="card-upcoming__dr-name">Speaker-Name<span></span></p>
+                            <a href="#" class="btn-calendar-2 btn-calendar-2--white">Coming Soon</a>
+                        </div>
+
+
+
+                        <div class="card-upcoming card-upcoming--light-blue" id="upcomingCard2">
+                            <span class="card-upcoming__close-icon card-upcoming__close-icon--pruple"
+                                id="upcominCloseIcon2">×</span>
+                            <p class="card-upcoming__date card-upcoming__date--white-2" id="cardClickDate2">
+                                Tuesday-Wednesday, 9-10 November
+                            </p>
+                            <div class="card-upcoming__city">
+                                <p class="card-upcoming__title card-upcoming__date--white" id="cardClickText2">
+                                    Anticoagulation in VTE treatment:<br> Translating evidence into practice
+                                </p>
+                                <p class="card-upcoming__title-city" style="background-color:#000484; color: #fff;">
+                                    LatAM</p>
+                            </div>
+                            <p class="card-upcoming__dr-name">Speaker-Name<span></span></p>
+                            <a href="#" class="btn-calendar-2 btn-calendar-2--pink">Coming Soon</a>
+                        </div>
+
+                        <div class="card-upcoming card-upcoming--dark-purple" id="upcomingCard3">
+                            <span class="card-upcoming__close-icon card-upcoming__close-icon--white"
+                                id="upcominCloseIcon3">×</span>
+                            <p class="card-upcoming__date card-upcoming__date--white">Tuesday, 9 November</p>
+                            <div class="card-upcoming__city">
+                                <p class="card-upcoming__title card-upcoming__title--white">
+                                    Anticoagulation in VTE treatment:<br> Translating evidence into practice
+                                </p>
+                                <p class="card-upcoming__title-city">AfMe</p>
+                            </div>
+                            <p class="card-upcoming__dr-name">Professor David Jimenez<span></span></p>
+                            <a href="#" class="btn-calendar-2 btn-calendar-2--white">Coming Soon</a>
+                        </div>
+
+                    </div>
+                    <div class="upcoming-events__tap-webinar">
+                        <img src="/file/image/icon-hand.png" alt="Icon" class="upcoming-events__tap-webinar__icon">
+                        <p class="upcoming-events__tap-webinar__text">Tap Webinar</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="session-master">
+        <div class="session-master__position">
+            <div class="session-master__box">
+                <img src="/file/image/afme_banner.png" class="session-master__banner">
+                <p class="session-master__title">Advancing Excellence in AF <br> Patient Care</p>
+                <p class="session-master__date">19 October</p>
+                <a href="#" target="_blank" class="session-master__btn">COMING SOON</a>
+            </div>
+            <div class="session-master__box">
+                <img src="/file/image/latam_banner.png" class="session-master__banner">
+                <p class="session-master__title">Advancing Excellence in AF <br> Patient Care</p>
+                <p class="session-master__date">19&20 October</p>
+                <a href="#" target="_blank" class="session-master__btn-latam">COMING SOON</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SPEAKER-1- MODAL  -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <div class="modal-header__speaker">
+                        <img src="/file/image/speaker-1.png" alt="speaker" class="modal-header__speaker__img">
+                        <div class="modal-header-speaker-header">
+                            <p class="modal-header__speaker__name">Luciano Sposato MD, MBA</p>
+                            <p class="modal-header__speaker__title">
+                                Professor, Department of <br>
+                                Clinical Neurological Sciences, <br>
+                                London Health Sciences Centre (LHSC), <br>
+                                Western University, Ontario
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-body__text">
+                        Luciano Sposato is a stroke neurologist and clinician-researcher. He is appointed as Professor
+                        of Neurology, London Health Sciences Centre (LHSC), Western University, London, Canada. He is
+                        the Head of LHSC/Western University Stroke Program and holds the Dr Kathleen and Henry Barnett
+                        Chair in Stroke Research. Dr Sposato is an Associate Scientist at the Robarts Research Institute
+                        and Scientist at Lawson Health Research Institute. Dr Sposato’s research focuses on the heart
+                        and brain connection. His research is unique in its approach since he investigates how brain
+                        damage affects the heart and vice-versa. He established the Heart & Brain Lab at Western
+                        University, where he leads a multidisciplinary and translational research programme involving
+                        epidemiological, clinical and experimental studies investigating the heart and brain connection.
+                        Among his major contributions, Dr Sposato has established the concepts of atrial fibrillation
+                        diagnosed after stroke (AFDAS) and stroke-induced heart injury (SIHI). </p>
+                    <p class="modal-body__text">
+                        Dr Sposato has authored over 120 scientific publications. He also sits on the editorial boards
+                        of Neurology (journal of the American Academy of Neurology), Stroke (official journal of the
+                        American Heart Association), Journal of the American Heart Association (JAHA), and the World
+                        Stroke Academy (World Stroke Organization). Dr Sposato is the Editor for the neurocardiology
+                        section of Stroke Journal and Guest Associate Editor of JAHA. </p>
+                </div>
+                <!-- <div class="modal-footer">
+
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SPEAKER-1- MODAL -->
+    <!-- SPEAKER-2- MODAL  -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <div class="modal-header__speaker">
+                        <img src="/file/image/speaker-2.png" alt="speaker" class="modal-header__speaker__img">
+                        <div class="modal-header-speaker-header">
+                            <p class="modal-header__speaker__name">Jose L. Zamorano MD, FESC</p>
+                            <p class="modal-header__speaker__title">
+                                Head of Cardiology, University Hospital <br>
+                                Ramón y Cajal, Madrid
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-body__text">
+                        Jose L. Zamorano is Head of Cardiology at the University Hospital Ramón y Cajal, Madrid, and has
+                        directed the Cardiovascular Institute of the Hospital Clínico San Carlos, Madrid, Spain.
+                        Professor Zamorano has served as President of the Spanish National Research Evaluation Committee
+                        and Chair of the European Society of Cardiology (ESC) Global Scientific Affairs. He has also
+                        been President of the European Echocardiography Association of the ESC, Vice President of the
+                        ESC, as well as Chair of the ESC Guidelines Committee.
+                    </p>
+                    <p class="modal-body__text">
+                        Professor Zamorano has a broad range of research interests including heart failure, ischaemic
+                        heart disease, cardiovascular risk factors and imaging modalities. Within these fields, he has
+                        published over 540 articles in peer-reviewed journals, over 400 abstracts in various symposia,
+                        and over 50 chapters in medical books, including the European Textbook of Cardiovascular
+                        Imaging.
+                    </p>
+                    <p class="modal-body__text">
+                        Over the years, Professor Zamorano has received a number of prestigious Spanish and
+                        International awards, such as the Golden Plaque of the Public Health Authorities of Madrid and
+                        the Inge Edler Gold Medal, the silver medal of the ESC, and Research Award of the Spanish
+                        Society of Cardiology. He serves on numerous Editorial Boards, including the Spanish Journal of
+                        Cardiology, European Journal of Echocardiography, the American Society of Echocardiography and
+                        the European Heart Journal.
+                    </p>
+                </div>
+                <!-- <div class="modal-footer">
+
+            </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SPEAKER-2- MODAL -->
+
+    <footer class="footer-landing p-footer">
+        <div class="container-fluid ie-top">
+            <div class="row">
+                <div class="col-md-12 col-lg-9 flex-start-lg-footer">
+                    <img src="file/image/footer-logo.png" alt="Logo" class="footer-landing__img">
+                    <div class="footer-register-text">
+                        Pfizer (Thailand) Limited <br>
+                        Floor 36 and 37 United Center Building<br>
+                        323 Silom Road, Silom, Bangrak, Bangkok 10500, Thailand <br><br>
+                        ™ Trademark<br>
+                        Copyright © 2020 Pfizer Inc. All rights reserved <br>
+                        The product information provided in this site is intended only for Healthcare Professionals of
+                        Egypt. The products discussed herein may have different product labelling in different
+                        countries.<br>
+                        Further information is available upon request. <br>
+                        Pfizer Egypt SAE <br>
+                        147 El Tahrir St., Dokki, Giza,<br>
+                        P.O. Box 2357 – Postal Code 12311,<br>
+                        Cairo, Egypt <br><br>
+                        © Copyright 2021 Pfizer S.R.L. Todos los derechos reservados. No se permite la reproducción
+                        total o parcial de este material, ni su traducción, ni su incorporación a un sistema
+                        informático, ni su locación, ni su transmisión en cualquier forma o por cualquier medio, sin el
+                        permiso previo y escrito de los titulares del copyright. Material de uso exclusivo para
+                        profesionales de la salud.
+
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-3 flex-end-lg-center-landing">
+                    <p class="footer-landing__cme">© 2021 Pfizer Inc. All rights reserved <br>
+                        For Healthcare Professionals Only <br>
+                        ASIA: PP-ELI-THA-0662<br>
+                        AFME: PP-PFE-EGY-0079<br>
+                        LATAM: PP-ELI-ARG-0393
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="file/js/jquery-3.4.1.min.js"></script>
+    <script src="file/js/bootstrap.min.js"></script>
+    <!-- <script src="file/js/coutdown.js"></script> -->
+    <script src="file/js/swiper-bundle.min.js"></script>
+    <script src="/file/js/swiper.min.js"></script>
+    <script src="file/js/slide.js"></script>
+    <script src="file/js/main.js"></script>
+
+</body>
+
+</html>

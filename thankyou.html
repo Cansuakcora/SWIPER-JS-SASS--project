@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Name | Thankyou</title>
+
+  <link rel="stylesheet" href="/file/css/bootstrap.min.css">
+  <link rel="stylesheet" href="file/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/file/css/main.css">
+  <!-- For ie -->
+  <link rel="stylesheet" href="/file/css/swiper.min.css">
+
+</head>
+
+<body>
+
+  <header class="header shadow-header">
+    <div class="container">
+      <div class="row ie-mt-1">
+        <div class="col-md-12 col-lg-2 flex-start-lg-center">
+          <a href="/">
+            <img src="/file/image/logo-aflive.png" alt="Logo" class="header__logo-register" />
+          </a>
+        </div>
+        <div class="col-md-12 col-lg-6 flex-start-lg-center">
+        </div>
+        <div class="col-md-12 col-lg-4 flex-end-lg-center"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-thankyou main-bg">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 flex-end-md-center">
+          <div class="card-thankyou mr-md-3">
+            <img src="/file/image/thankyou.png" class="card-thankyou__icon">
+            <h2 class="card-thankyou__title">
+              THANK YOU FOR<br />
+              REGISTERING
+            </h2>
+            <p class="card-thankyou__subtitle">
+              You have successfully<br />
+              registered for the event
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 flex-start-md-center">
+          <div class="card-thankyou-session shadow-card mb-5">
+            <div class="card-thankyou-session__title">
+              Wednesday, 11 August 2021
+            </div>
+            <p class="card-thankyou-session__asia">Asia Session</p>
+            <p class="card-thankyou-session__subject">Global Perspectives from the Cutting Edge of Stroke<br> Prevention
+              in Atrial Fibrillation</p>
+            <div class="card-thankyou-session__btn-position">
+              <p id="asiabtn1" class="card-thankyou-session__btn card-thankyou-session__btn-active">Session1</p>
+              <p id="asiabtn2" class="card-thankyou-session__btn">Session2</p>
+            </div>
+            <div id="thankyou-asia1">
+              <div class="card-thankyou-session__subtitle">
+                <span class="card-thankyou-session__country">Country/Region</span>
+                <span class="card-thankyou-session__time"></span>
+              </div>
+              <div class="card-thankyou-session__city-time">
+                <span class="card-thankyou-session__city">Pakistan</span>
+                <span class="card-thankyou-session__clock">13:00–14:30</span>
+              </div>
+              <div class="card-thankyou-session__city-time">
+                <span class="card-thankyou-session__city">India</span>
+                <span class="card-thankyou-session__clock">13:30–15:00</span>
+              </div>
+              <div class="card-thankyou-session__city-time">
+                <span class="card-thankyou-session__city">Indonesia, Thailand,<br> Vietnam</span>
+                <span class="card-thankyou-session__clock">15:00–16:30</span>
+              </div>
+              <div class="card-thankyou-session__city-time border-b-none">
+                <span class="card-thankyou-session__city ">
+                  Hong Kong, Malaysia,<br> Philippines, Singapore, Taiwan
+                </span>
+                <span class="card-thankyou-session__clock">16:00–17:30</span>
+              </div>
+              <div class="card-thankyou-session__calendar">
+                <a href="#" class="card-thankyou-session__login-btn">Login</a>
+
+                <a id="addeventatc" title="{add_to_calendar}" style="color: #fff !important;"
+                  class="addeventatc btn-calendar-thankyou mb-2"
+                  data-id="<?=project_config('add_to_calendar_unique_id') ?>"
+                  href="https://www.addevent.com/event/<?=project_config('add_to_calendar_unique_id') ?>"
+                  target="_blank" rel="nofollow">ADD TO CALENDAR</a>
+                <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer>
+                </script>
+
+              </div>
+            </div>
+            <div id="thankyou-asia2" style="display: none;">
+              <div class="card-thankyou-session__subtitle">
+                <span class="card-thankyou-session__country">Country/Region</span>
+                <span class="card-thankyou-session__time"></span>
+              </div>
+              <div class="card-thankyou-session__city-time">
+                <span class="card-thankyou-session__city">Pakistan</span>
+                <span class="card-thankyou-session__clock">16:00–17:30</span>
+              </div>
+              <div class="card-thankyou-session__city-time">
+                <span class="card-thankyou-session__city">India</span>
+                <span class="card-thankyou-session__clock">16:30–18:00</span>
+              </div>
+              <div class="card-thankyou-session__city-time">
+                <span class="card-thankyou-session__city">Indonesia, Thailand,<br> Vietnam</span>
+                <span class="card-thankyou-session__clock">18:00–19:30</span>
+              </div>
+              <div class="card-thankyou-session__city-time border-b-none">
+                <span class="card-thankyou-session__city ">
+                  Hong Kong, Malaysia,<br> Philippines, Singapore, Taiwan
+                </span>
+                <span class="card-thankyou-session__clock">19:00–20:30</span>
+              </div>
+              <div class="card-thankyou-session__calendar">
+                <a href="#" class="card-thankyou-session__login-btn">Login</a>
+
+                <a id="addeventatc" title="{add_to_calendar}" style="color: #fff !important;"
+                  class="addeventatc btn-calendar-thankyou mb-2"
+                  data-id="<?=project_config('add_to_calendar_unique_id') ?>"
+                  href="https://www.addevent.com/event/<?=project_config('add_to_calendar_unique_id') ?>"
+                  target="_blank" rel="nofollow">ADD TO CALENDAR</a>
+                <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer>
+                </script>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 flex-center">
+          <div class="card-pre-survey">
+            <h2 class="card-pre-survey__title">PRE-EVENT POLL</h2>
+            <h4 class="card-pre-survey__subtitle">
+              We would appreciate 1 minute of your time to answer the
+              following questions. Thank you very much!
+            </h4>
+
+            <form method="POST" id="survey_form">
+              <!-- [Q1] -->
+              <div class="survey__group">
+                <h3 class="survey__question">
+                  1. How did you hear about AFLive?
+                </h3>
+                <label class="survey__label register-label" for="cb1">
+                  <input id="cb1" name="q1" type="radio" class="click-checkbox-3" value=" From colleagues/friends"
+                    required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text"> From colleagues/friends</span>
+                </label>
+
+                <label class="survey__label register-label" for="cb2">
+                  <input id="cb2" name="q1" type="radio" class="click-checkbox-3" value="From Pfizer affiliates"
+                    required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">From Pfizer affiliates</span>
+                </label>
+
+                <label class="survey__label register-label" for="cb3">
+                  <input id="cb3" name="q1" type="radio" class="click-checkbox-3"
+                    value="From previous webinar(s) of this series" required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">From previous webinar(s) of this series</span>
+                </label>
+
+                <label class="survey__label register-label" for="cb4">
+                  <input id="cb4" name="q1" type="radio" class="click-checkbox-3" value="Facebook" required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">Facebook</span>
+                </label>
+
+                <label class="survey__label register-label" for="cb5">
+                  <input id="cb5" name="q1" type="radio" class="click-checkbox-3" value="LinkedIn" required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">LinkedIn</span>
+                </label>
+
+                <label class="survey__label register-label" for="cb6">
+                  <input id="cb6" name="q1" type="radio" class="click-checkbox-3" value="Other" required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">Other</span>
+                </label>
+              </div>
+              <!-- [Q1] -->
+
+              <!-- [Q2] -->
+              <div class="survey__group">
+                <h3 class="survey__question">
+                  2. Have you attended any AFLive webinar(s) before?
+                </h3>
+                <label class="survey__label register-label" for="cb7">
+                  <input id="cb7" name="q2" type="radio" class="click-checkbox-3" value="Yes" required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">Yes</span>
+                </label>
+
+                <label class="survey__label register-label" for="cb8">
+                  <input id="cb8" name="q2" type="radio" class="click-checkbox-3" value="No" required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">No</span>
+                </label>
+              </div>
+              <!-- [Q2] -->
+
+              <!-- [Q3] -->
+              <div class="survey__group">
+                <h3 class="survey__question">
+                  3. What attracted you to register for the upcoming event?
+                  (Select all that apply)
+                </h3>
+                <label class="survey__label register-label" for="cb13">
+                  <input id="cb13" name="q3" type="checkbox" class="click-checkbox-3" value="Program" required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">Program</span>
+                </label>
+
+                <label class="survey__label register-label" for="cb14">
+                  <input id="cb14" name="q4" type="checkbox" class="click-checkbox-3" value="Faculty profile"
+                    required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">Faculty profile</span>
+                </label>
+
+                <label class="survey__label register-label" for="cb15">
+                  <input id="cb15" name="q5" type="checkbox" class="click-checkbox-3" value="Meeting agenda/format "
+                    required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">Meeting agenda/format </span>
+                </label>
+
+                <label class="survey__label register-label" for="cb16">
+                  <input id="cb16" name="q6" type="checkbox" class="click-checkbox-3"
+                    value="Good experience from past AFLive webinars" required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">Good experience from past AFLive webinars</span>
+                </label>
+
+                <label class="survey__label register-label" for="cb17">
+                  <input id="cb17" name="q7" type="checkbox" class="click-checkbox-3"
+                    value="Recommendations from colleagues/friends" required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">Recommendations from colleagues/friends</span>
+                </label>
+
+                <label class="survey__label register-label" for="cb18">
+                  <input id="cb18" name="q8" type="checkbox" class="click-checkbox-3"
+                    value="Still exploring as this is my first one" required />
+                  <span class="checkbox-custom rectangular"></span>
+                  <span class="survey__text">Still exploring as this is my first one</span>
+                </label>
+              </div>
+              <!-- [Q3] -->
+
+              <div class="survey__code">GCMA CODE</div>
+
+              <div class="survey__button">
+                <button class="btn-yellow">SEND</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <section class="agenda" id="agenda">
+          <div class="container">
+            <p class="agenda__title">AGENDA</p>
+            <div class="agenda__thankyou-btn-position">
+              <p class="agenda__thankyou-btn agenda__thankyou-btn-active" id="agenda-asia-btn">ASIA</p>
+              <p class="agenda__thankyou-btn" id="agenda-afme-btn">AFME</p>
+              <p class="agenda__thankyou-btn" id="agenda-latam-btn">LATAM</p>
+            </div>
+            <div class="agenda__scroll" id="agenda-1">
+              <div class="agenda__table">
+                <div class="agenda__table__head">
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-h1">
+                      Duration
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-h2">
+                      Topic
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-h3">
+                      Speaker
+                    </div>
+                  </div>
+                </div>
+
+                <div class="agenda__table__body">
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      5 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      Introduction
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      Dr Salil P. Shinde
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      15 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      <strong>Presentation:</strong> Clinical pearls in AF management for patients with multiple
+                      comorbidities: Right dose for the right patient
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      Professor Jose L. Zamorano
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      15 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      <strong>Presentation:</strong> Secondary stroke prevention: Special considerations in
+                      patients
+                      with AF
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      Dr Luciano Sposato
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      30 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      <strong>Panel Discussion:</strong> Towards a multidisciplinary treatment pathway in AF: What
+                      can we learn?
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      All faculty
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      20 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      Questions & Answers Session
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      All faculty
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      5 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      Closing
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      Dr Salil P. Shinde
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="agenda__scroll" id="agenda-2" style="display: none;">
+              <div class="agenda__table">
+                <div class="agenda__table__head">
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-h1">
+                      Duration
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-h2">
+                      Topic
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-h3">
+                      Speaker
+                    </div>
+                  </div>
+                </div>
+
+                <div class="agenda__table__body">
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      5 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      Introduction
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      15 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      <strong>Presentation:</strong> Clinical pearls in AF management for patients with multiple
+                      comorbidities: Right dose for the right patient
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      Professor Jose L. Zamorano
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      15 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      <strong>Presentation:</strong> Secondary stroke prevention: Special considerations in patients
+                      with AF
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      Dr Luciano Sposato
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      20 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      Questions & Answers Session
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      All faculty
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      5 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      Closing
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="agenda__scroll" id="agenda-3" style="display: none;">
+              <div class="agenda__table">
+                <div class="agenda__table__head">
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-h1">
+                      Duration
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-h2">
+                      Topic
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-h3">
+                      Speaker
+                    </div>
+                  </div>
+                </div>
+
+                <div class="agenda__table__body">
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      5 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      Introduction
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      15 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      <strong>Presentation:</strong> Clinical pearls in AF management for patients with multiple
+                      comorbidities: Right dose for the right patient
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      Professor Jose L. Zamorano
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      15 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      <strong>Presentation:</strong> Secondary stroke prevention: Special considerations in patients
+                      with AF
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      Dr Luciano Sposato
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      20 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      Questions & Answers Session
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+                      All faculty
+                    </div>
+                  </div>
+                  <div class="agenda__table__row">
+                    <div class="agenda__table__col agenda__table__col-b1">
+                      5 mins
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b2">
+                      Closing
+                    </div>
+                    <div class="agenda__table__col agenda__table__col-b3">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+    <section class="previously-slide" id="previously-slide">
+      <div class="container-slide pr-sm-5">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="previously-slide__title">
+              Previously On <b>AFLive</b>
+            </h2>
+          </div>
+          <div class="col-12">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-item__video">
+                      <a href="javascript:;" class="remove-img" data-id="1">
+                        <img src="file/image/bg-slide1.png" alt="image" class="slide-item__img">
+                        <img src="/file/image/thankyou-btn.png" class="slide-item__img-btn">
+                      </a>
+                      <iframe class="video-player-show" id="video1"
+                        src="https://players.brightcove.net/1852113022001/default_default/index.html?videoId=6125450850001"
+                        allowfullscreen="" allow="encrypted-media" width="649" height="365"></iframe>
+                    </div>
+
+                    <div class="btn-dropdown-slide-item" id="btnSlideDown1">
+                      <button class="btn-slide-item border-bottom-radius-14px" id="btnDropdownSlide1">
+                        Watch Video
+                        <img src="file/image/icon-arrow.png" alt="Icon" class="btn-slide-item__icon" id="btnSlideIcon1">
+                      </button>
+                      <div id="slideBtnList1" class="btn-slide-item__child">
+                        <a href="#">Brazil </i> </a>
+                        <a href="#">Hong Kong </i> </a>
+                        <a href="#">Mexico </i> </a>
+                        <a href="#">Malaysia </i> </a>
+                      </div>
+                    </div>
+                    <div class="slide-item__info-box">
+                      <p class="slide-item__info-box__title">
+                        Atrial Fibrillation Management in Patients with Complex Comorbid Cardiovascular Risk (Series 1)
+                      </p>
+                      <p class="slide-item__info-box__dr-name">
+                        Professor Shaun Goodman
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-item__video">
+                      <a href="javascript:;" class="remove-img" data-id="2">
+                        <img src="file/image/bg-slide2.png" alt="image" class="slide-item__img">
+                        <img src="/file/image/thankyou-btn.png" class="slide-item__img-btn">
+                      </a>
+                      <iframe class="video-player-show" id="video2"
+                        src="https://players.brightcove.net/1852113022001/default_default/index.html?videoId=6140051833001"
+                        allowfullscreen="" allow="encrypted-media" width="649" height="365"></iframe>
+                    </div>
+
+                    <div class="btn-dropdown-slide-item" id="btnSlideDown2">
+                      <button class="btn-slide-item border-bottom-radius-14px" id="btnDropdownSlide2">
+                        Watch Video
+                        <img src="file/image/icon-arrow.png" alt="Icon" class="btn-slide-item__icon" id="btnSlideIcon2">
+                      </button>
+                      <div id="slideBtnList2" class="btn-slide-item__child">
+                        <a href="#">Brazil </i> </a>
+                        <a href="#">Hong Kong </i> </a>
+                        <a href="#">Mexico </i> </a>
+                        <a href="#">Malaysia </i> </a>
+                      </div>
+                    </div>
+                    <div class="slide-item__info-box">
+                      <p class="slide-item__info-box__title">
+                        Management of Atrial Fibrillation in high risk patients (Series 2)
+                      </p>
+                      <p class="slide-item__info-box__dr-name">
+                        Professor Paul Dorian
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-item__video">
+                      <a href="javascript:;" class="remove-img" data-id="3">
+                        <img src="file/image/bg-slide3.png" alt="image" class="slide-item__img">
+                        <img src="/file/image/thankyou-btn.png" class="slide-item__img-btn">
+                      </a>
+                      <iframe class="video-player-show" id="video3"
+                        src="https://players.brightcove.net/1852113022001/default_default/index.html?videoId=6155069865001"
+                        allowfullscreen="" allow="encrypted-media" width="650" height="365"></iframe>
+                    </div>
+
+                    <div class="btn-dropdown-slide-item" id="btnSlideDown3">
+                      <button class="btn-slide-item border-bottom-radius-14px" id="btnDropdownSlide3">
+                        Watch Video
+                        <img src="file/image/icon-arrow.png" alt="Icon" class="btn-slide-item__icon" id="btnSlideIcon3">
+                      </button>
+                      <div id="slideBtnList3" class="btn-slide-item__child">
+                        <a href="#">Brazil</i> </a>
+                        <a href="#">Hong Kong</i> </a>
+                        <a href="#">Mexico</i> </a>
+                        <a href="#">Malaysia</i> </a>
+                      </div>
+                    </div>
+                    <div class="slide-item__info-box">
+                      <p class="slide-item__info-box__title">
+                        Management of high-risk and frail AF patient populations with multiple comorbidities (Series 2)
+                      </p>
+                      <p class="slide-item__info-box__dr-name">
+                        Professor Raffaele De Caterina
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-item__video">
+                      <a href="javascript:;" class="remove-img" data-id="4">
+                        <img src="file/image/bg-slide4.png" alt="image" class="slide-item__img">
+                        <img src="/file/image/thankyou-btn.png" class="slide-item__img-btn">
+                      </a>
+                      <iframe class="video-player-show" id="video4"
+                        src="https://players.brightcove.net/1852113022001/default_default/index.html?videoId=6168179416001"
+                        allowfullscreen="" allow="encrypted-media" width="650" height="365"></iframe>
+                    </div>
+
+                    <div class="btn-dropdown-slide-item" id="btnSlideDown4">
+                      <button class="btn-slide-item border-bottom-radius-14px" id="btnDropdownSlide3">
+                        Watch Video
+                        <img src="file/image/icon-arrow.png" alt="Icon" class="btn-slide-item__icon" id="btnSlideIcon3">
+                      </button>
+                      <div id="slideBtnList3" class="btn-slide-item__child">
+                        <a href="#">Brazil</i> </a>
+                        <a href="#">Hong Kong</i> </a>
+                        <a href="#">Mexico</i> </a>
+                        <a href="#">Malaysia</i> </a>
+                      </div>
+                    </div>
+                    <div class="slide-item__info-box">
+                      <p class="slide-item__info-box__title">
+                        test
+                      </p>
+                      <p class="slide-item__info-box__dr-name">
+                        test
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="swiper-slide">
+                  <div class="slide-item">
+                    <div class="slide-item__video">
+                      <a href="javascript:;" class="remove-img" data-id="5">
+                        <img src="file/image/bg-slide5.png" alt="image" class="slide-item__img">
+                      </a>
+                      <iframe class="video-player-show" id="video5"
+                        src="https://players.brightcove.net/1852113022001/default_default/index.html?videoId=6170332711001"
+                        allowfullscreen="" allow="encrypted-media" width="650" height="365"></iframe>
+                    </div>
+
+                    <div class="btn-dropdown-slide-item" id="btnSlideDown5">
+                      <button class="btn-slide-item border-bottom-radius-14px" id="btnDropdownSlide3">
+                        Watch Video
+                        <img src="file/image/icon-arrow.png" alt="Icon" class="btn-slide-item__icon" id="btnSlideIcon3">
+                      </button>
+                      <div id="slideBtnList3" class="btn-slide-item__child">
+                        <a href="#">Brazil</i> </a>
+                        <a href="#">Hong Kong</i> </a>
+                        <a href="#">Mexico</i> </a>
+                        <a href="#">Malaysia</i> </a>
+                      </div>
+                    </div>
+                    <div class="slide-item__info-box">
+                      <p class="slide-item__info-box__title">
+                        Finding the right antidepressant: Assessing evidence and effectiveness data
+                      </p>
+                      <p class="slide-item__info-box__dr-name">
+                        Professor Claudio Soares
+
+                      </p>
+                    </div>
+                  </div>
+                </div> -->
+
+              </div>
+              <!-- Add Arrows  -->
+              <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+
+
+  <footer class="footer-landing">
+    <div class="container-fluid ie-top">
+      <div class="row">
+        <div class="col-md-12 col-lg-6 flex-start-lg-footer">
+          <img src="file/image/footer-logo.png" alt="Logo" class="footer-landing__img">
+          <div class="footer-register-text">
+            Pfizer (Thailand) Limited <br>
+            Floor 36 and 37 United Center Building<br>
+            323 Silom Road, Silom, Bangrak, Bangkok 10500, Thailand
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-3 flex-center-justify ">
+
+        </div>
+        <div class="col-md-12 col-lg-3 flex-end-lg-center">
+          <p class="footer-landing__cme">© 2021 Pfizer Inc. All rights reserved <br>
+            For Healthcare Professionals Only<br>
+            PP-ELI-THA-0662
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="file/js/jquery-3.4.1.min.js"></script>
+  <script src="file/js/bootstrap.min.js"></script>
+  <script src="file/js/swiper-bundle.min.js"></script>
+  <script src="/file/js/swiper.min.js"></script>
+  <script src="file/js/slide.js"></script>
+  <script src="file/js/main.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

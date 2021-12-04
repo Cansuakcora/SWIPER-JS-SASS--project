@@ -1,0 +1,526 @@
+.main-register {
+  padding: 4rem 0;
+
+  &__subtittle {
+    color: $color-white;
+    font-size: 28px;
+    padding-left: 8px;
+    margin-top: .8rem;
+
+    @include media1600{
+      font-size: 21px;
+    }
+
+    @include media996 {
+      text-align: center;
+    }
+  }
+
+  &__button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__login-btn{
+    color: $color-first-box-color;
+    background-color: #F0F3F7;
+    width: 100%;
+    max-width: 400px;
+    height: 56px;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    font-family: 'FSAlbertBold',sans-serif;
+    border-radius: 27px;
+    padding: 0 1.2rem 0 9.4rem;
+    transition: all .5s;
+
+    &:hover{
+      text-decoration: none;
+      transform: scale(1.03);
+      color: $color-first-box-color;
+    }
+
+    @include media-min1600 {
+      max-width: 450px;
+      padding: 0px 1.2rem 0px 11.5rem;
+    }
+
+    @include media380 {
+      padding: 0 1.2rem 0 7.5rem;
+    }
+  }
+
+ 
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.4rem;
+
+}
+
+.form-card {
+  max-width: 400px;
+  width: 100%;
+  background-color: $color-white;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14);
+
+  @include media-min1600 {
+    max-width: 450px;
+  }
+
+  &__title {
+    font-size: 2em;
+    color: $color-first-box-color;
+    font-family: 'FSAlbertBold', sans-serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__border {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid rgba($color-black-1, 0.15);
+    margin-bottom: 0.8rem;
+  }
+
+  &__input {
+    max-width: 364px;
+    width: 100%;
+    height: 46px;
+    background-color: $color-gray-light;
+    border-radius: 7px;
+    font-size: 16px;
+    color: $color-black-3;
+    font-family: 'RobotoRegular', sans-serif;
+    // appearance: none;
+    // padding-left: 2.2rem;
+    text-indent: 24px;
+
+    @include media-min1600 {
+      max-width: 450px;
+    }
+
+  }
+
+  select {
+    text-indent: 17px;
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+      padding-left: 2.2rem;
+    }
+
+    @-moz-document url-prefix() {
+      text-indent: 9px;
+    }
+
+    @supports (-webkit-touch-callout: none) {
+      text-indent: 24px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    color: #999999;
+  }
+
+  &__checkboxs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  &__text {
+    font-size: 13px;
+    color: $color-black-3;
+    font-family: "FSAlbertRegular" ,sans-serif;
+    margin-left: 1.5rem;
+    display: block;
+
+    & a{
+      color: $color-blue;
+      text-decoration: underline;
+    }
+  }
+
+  &__description {
+    font-size: 12px;
+    color: $color-black-3;
+    font-family: "FSAlbertRegular" ,sans-serif;
+    margin-bottom: 1rem;
+  }
+}
+
+/* [ REGISTER CHECKBOX  START ] */
+.checkbox-label {
+  display: inline;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 18px;
+  height: 18px;
+  width: 18px;
+  clear: both;
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  border: 1px solid #707070;
+
+  @supports (-moz-appearance:none) {
+    top: 13px;
+  }
+}
+
+.checkbox-label input:checked~.checkbox-custom {
+  background-color: $color-pruple;
+  border-radius: 4px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  border: 1px solid #707070;
+}
+
+.checkbox-label .checkbox-custom::after {
+  position: absolute;
+  content: '';
+  left: 8px;
+  top: 8px;
+  height: 0px;
+  width: 0px;
+  border-radius: 4px;
+  border: solid #009bff;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg) scale(0);
+  -ms-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+  opacity: 1;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+.checkbox-label input:checked~.checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  left: 6px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid $color-white;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* For Ripple Effect */
+.checkbox-label .checkbox-custom::before {
+  position: absolute;
+  content: '';
+  left: 10px;
+  top: 10px;
+  width: 0px;
+  height: 0px;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.checkbox-label input:checked~.checkbox-custom::before {
+  left: -3px;
+  top: -3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  -webkit-transform: scale(3);
+  -ms-transform: scale(3);
+  transform: scale(3);
+  opacity: 0;
+  z-index: 999;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+/* [ REGISTER CHECKBOX  END ] */
+
+/* [ SURVEY CHECKBOX  START ] */
+.survey {
+  &__group {
+    @include media991 {
+      font-size: 12px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba($color-gray-dark, 0.25);
+
+    &:nth-last-child(2) {
+      border-bottom: none;
+    }
+  }
+
+  &__question {
+    font-size: 1.25em;
+    color: $color-black-3;
+    font-family: 'RobotoBold', sans-serif;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1em;
+    color: $color-black-4;
+    font-family: 'RobotoRegular', sans-serif;
+    margin-left: 1.5rem;
+    display: block;
+  }
+
+  &__button {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include media500 {
+      justify-content: center;
+    }
+  }
+
+  &__button-event {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media500 {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  &__label {
+    display: inline;
+    position: relative;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 18px;
+    // height: 18px;
+    width: 18px;
+    clear: both;
+    width: 100%;
+    margin-left: 0.5rem;
+  }
+
+  &__label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 16px;
+    width: 18px;
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 0.5px solid #707070;
+  }
+
+  &__label input:checked~.checkbox-custom {
+    background-color: $color-white;
+
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    border: 1px solid $color-first-box-color;
+  }
+
+  &__label .checkbox-custom::after {
+    position: absolute;
+    content: '';
+    left: 8px;
+    top: 8px;
+    height: 0px;
+    width: 0px;
+    // border: solid $color-yellow-2;
+    // border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+  }
+
+  &__label input:checked~.checkbox-custom::after {
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+    left: 2px;
+    top: 2px;
+    width: 12px;
+    height: 10px;
+    //   border: solid $color-yellow-2;
+    //   border-width: 0 2px 2px 0;
+    background-color: $color-first-box-color;
+  }
+
+  &__label .checkbox-custom::before {
+    position: absolute;
+    content: '';
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border: 2px solid $color-first-box-color;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+  }
+
+  &__label input:checked~.checkbox-custom::before {
+    left: 0px;
+    top: -3px;
+    width: 0px;
+    height: 0px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity: 0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+  }
+
+  &__code {
+    font-size: 1em;
+    color: $color-black-4;
+    font-family: 'BrandonGrotesqueRegular', sans-serif;
+
+    position: absolute;
+    bottom: 3.2rem;
+    left: 20px;
+
+    @include media500{
+      bottom: 1rem;
+      left: 30px;
+      font-size: 12px;
+    }
+  }
+}
+
+/* [ SURVEY CHECKBOX  END ] */
+
+/* [SURVEY RADIO STARS START ] */
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,100,300,700,400);
+
+div.stars {
+  max-width: 270px;
+  display: inline-block;
+}
+
+input.star {
+  display: none;
+}
+
+label.star {
+  float: right;
+  padding: 10px;
+  font-size: 36px;
+  color: $color-pruple;
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include media767 {
+    font-size: 20px;
+    ;
+  }
+}
+
+input.star:checked~label.star:before {
+  content: '\f005';
+  color: $color-pruple;
+  transition: all 0.25s;
+}
+
+input.star-5:checked~label.star:before {
+  color: $color-pruple;
+  text-shadow: 0 0 20px $color-pruple-light;
+}
+
+input.star-1:checked~label.star:before {
+  color: rgba($color-pruple, 0.8);
+}
+
+label.star:hover {
+  transform: rotate(-15deg) scale(1.3);
+}
+
+label.star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+}
+
+/* [SURVEY RADIO STARS START ] */
+
